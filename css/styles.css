@@ -194,7 +194,7 @@ body
 /*start of ABOUT page styling*/
 
 .about {
-max-width: 700;
+max-width: 700px;
 margin: auto;
 text-align: center;
 }
