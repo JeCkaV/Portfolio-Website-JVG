@@ -211,7 +211,7 @@ text-align: center;
 .about-programming {
     display:-ms-grid;
     display: grid;
-    grid-column: 1fr;
+    grid-column: 1;
     -ms-grid-column: 1fr;
     grid-template-columns: 1fr;
     text-align: center;
@@ -221,7 +221,7 @@ text-align: center;
 .about-language {
     display: -ms-grid;
     display: grid;
-    grid-column: 1fr;
+    grid-column: 1;
     -ms-grid-column: 1fr;
     text-align: center;
     bottom: 15px;
