@@ -209,7 +209,7 @@ a :active {
 /*start of ABOUT page styling*/
 
 .about {
-max-width: 700;
+max-width: 700px;
 margin: auto;
 text-align: center;
 }
@@ -226,20 +226,22 @@ text-align: center;
 .about-programming {
    display:-ms-grid;
    display: grid;
-   grid-column: 1fr;
+   grid-column: 1;
    -ms-grid-column: 1fr;
    -ms-grid-columns: 1fr;
    grid-template-columns: 1fr;
    text-align: center;
+   -ms-text-justify: auto;
    border-bottom: 15px;
 }
 
 .about-language {
    display: -ms-grid;
    display: grid;
-   grid-column: 1fr;
+   grid-column: 1;
    -ms-grid-column: 1fr;
    text-align: center;
+   -ms-text-justify: auto;
    bottom: 15px;
 }
 
@@ -354,7 +356,7 @@ text-align: center;
 
 }
 contact form {
-   position:relative;
+   position: relative;
 }
 
 /*END OF CONTACT PAGE STYLING */
@@ -393,14 +395,10 @@ margin: 0;
 }
 
 .grid__item:last-child {
-   -ms-grid-column: 3;
-       grid-column-start: 3;
-   -ms-grid-column-span: 0;
-   grid-column-end: 3;
-   -ms-grid-row: 1;
-       grid-row-start: 1;
-   -ms-grid-row-span: 2;
-   grid-row-end: 3;
+   -ms-grid-column-span: 3;
+   grid-column: span 3;
+   -ms-grid-row-span: 3;
+   grid-row: span 3;
 }
 }
 /*END OF GRID STYLING */
@@ -436,4 +434,17 @@ margin: 0;
 
 @media all and (max-width: 750px){
    /* shared code */
- }
+ }.example {
+   display: -ms-grid;
+   display: grid;
+   -webkit-transition: all .5s;
+   -o-transition: all .5s;
+   transition: all .5s;
+   -webkit-user-select: none;
+      -moz-user-select: none;
+       -ms-user-select: none;
+           user-select: none;
+   background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+   background: -o-linear-gradient(top, white, black);
+   background: linear-gradient(to bottom, white, black);
+}
