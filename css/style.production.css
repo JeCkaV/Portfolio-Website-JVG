@@ -64,7 +64,7 @@ h3 {
 /*start of LINK styling*/
 
 a {
-   color: #00675c;
+  color: #357b70;
 }
 
 a :visited {
@@ -164,7 +164,7 @@ button:focus,
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    background-color:  #e0b354;
+    background-color:  #cde9c4;
 }
 /*END OF PAGE FOOTER STYLING */
 
@@ -191,7 +191,7 @@ button:focus,
   display: flex;
   width: 100%;
   padding: 20px;
-  background-color: #e0b354;
+  background-color: #cde9c4;
 }
 .page-header__item {
   -webkit-box-flex: 0;
