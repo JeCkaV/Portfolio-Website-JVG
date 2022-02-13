@@ -306,7 +306,7 @@ contact form {
  text-align: center;
 }
 
-/*END OF WORK PAGE STYLING */
+
 
 /* start grid fallback */
 .grid__item {
@@ -332,11 +332,13 @@ contact form {
 }
 
 .grid__item:last-child {
-    grid-column: span 3;
-    grid-row: span 3;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
 }
 }
 /*END OF GRID STYLING */
+
+/*END OF WORK PAGE STYLING */
 
 /*OVERWRITING ALL GIVEN VALUES WITH MEDIA - SHOULD BE AT THE END */
 
