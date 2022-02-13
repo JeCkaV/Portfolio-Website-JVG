@@ -64,8 +64,8 @@ body
  /*start of LINK styling*/
 
  a {
-     color: #00675c;
- }
+    color: var(--primary-color);
+  }
 
  a :visited {
        /* visited link */
