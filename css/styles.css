@@ -93,7 +93,7 @@ body
     /* takes the font from the outer container */
     font-family: inherit;
     /* styles the button */
-    background-color: #357b70;
+    background-color:  var(--primary-color);
     color: white;
     text-decoration: none;
     padding: 10px;
@@ -118,10 +118,6 @@ body
       color: #2b2b2b;
   }
 
-  .navigation-list__item--active {
-      text-decoration: none;
-  }
-
   /*END OF BUTTON STYLING */
 
   /*START OF PICTURE STYLING */
@@ -142,7 +138,7 @@ body
       display: flex;
       flex-direction: column;
       text-align: center;
-      background-color:mintcream ;
+      background-color:  var(--secondary-color);
   }
 /*END OF PAGE FOOTER STYLING */
 
@@ -165,7 +161,7 @@ body
     display: flex;
     width: 100%;
     padding: 20px;
-    background-color:mintcream ;
+    background-color: var(--secondary-color);
 }
 .page-header__item {
     flex: 0 1 200px;
@@ -188,6 +184,11 @@ body
     display: inline-block;
     margin-left: 15px;
 }
+
+.navigation-list__item--active {
+    text-decoration: none;
+  }
+
  /*END OF NAVIGATION LIST STYLING */
 
 
