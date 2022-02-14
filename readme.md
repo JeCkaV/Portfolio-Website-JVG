@@ -3,5 +3,6 @@ Project Objective - Createing a great portfolio which represts my best work and 
 Technologies used:
    - HTML
    - CSS 
-Deployed app link:
+Deployed app link: https://jeckav.github.io/Portfolio-Website-JVG/
+
 If you get time, take a screenshot of site and add it.
