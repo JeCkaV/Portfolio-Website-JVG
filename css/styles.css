@@ -178,6 +178,9 @@ body
 
 .navigation-list {
     list-style-type: none;
+    position: fixed;
+    top: 0%;
+    width: 100%;
 }
 
 .navigation-list li {
@@ -187,6 +190,13 @@ body
 
 .navigation-list__item--active {
     text-decoration: none;
+  }
+
+  @media screen and (resolution <600) {
+      .navigation-list {
+          float: none;
+          width: 100%;
+      }
   }
 
  /*END OF NAVIGATION LIST STYLING */
@@ -216,6 +226,7 @@ text-align: center;
     -ms-grid-column: 1fr;
     grid-template-columns: 1fr;
     text-align: center;
+    text-justify: auto;
     -ms-text-justify: auto;
     border-bottom: 15px;
 }
@@ -226,6 +237,7 @@ text-align: center;
     grid-column: 1;
     -ms-grid-column: 1fr;
     text-align: center;
+    text-justify: auto;
     -ms-text-justify: auto;
     bottom: 15px;
 }
@@ -295,8 +307,8 @@ text-align: center;
     position: relative;
 
 }
-contact form {
-    position: relative;
+.contact-form {
+    position: center;
 }
 
 /*END OF CONTACT PAGE STYLING */
