@@ -192,13 +192,6 @@ body
     text-decoration: none;
   }
 
-  @media screen and (resolution <600) {
-      .navigation-list {
-          float: none;
-          width: 100%;
-      }
-  }
-
  /*END OF NAVIGATION LIST STYLING */
 
 
