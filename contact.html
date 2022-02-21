@@ -64,34 +64,44 @@
     <a href="mailto:jeckavucko@gmail.com">Send me an email - click here!</a>
   </div>
 <br>
-<br>
 <!-- ADD ACTION TAG VALUE IN THE FORM -->
 
+<div class="adjusting">
+
+      <div id="after_submit"></div>
+
   <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+
     <div class="row">
       <label class="required" for="name">Your name:</label><br>
       <input id="name" class="input" name="name" type="text" value="" size="30"><br>
       <span id="name_validation" class="error_message"></span>
     </div>
+
     <div class="row">
       <label class="required" for="email">Your email:</label><br>
       <input id="email" class="input" name="email" type="text" value="" size="30"><br>
       <span id="email_validation" class="error_message"></span>
     </div>
+
     <div class="row">
       <label class="required" for="message">Your message:</label><br>
       <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br>
       <span id="message_validation" class="error_message"></span>
     </div>
-</form>
+
+  </form>
+
+      <input id="submit_button" type="submit" value="Send email">
+
+</div>
 
 </main>
 
 <footer class="page--footer">
 
   <div>
-
-<p>Find me on!</p>
+      <p>Find me on!</p>
   </div>
 
   <div class="social-media">
@@ -104,8 +114,7 @@
         <img src="IMG/LinkedIn.svg" alt="LinkedIn">
     </a>
 
-
-</div>
+  </div>
 
 </footer>
 
