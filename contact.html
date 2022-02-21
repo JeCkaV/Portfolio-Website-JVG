@@ -58,51 +58,34 @@
     48153 Muenster <br>
     Germany <br>
     <br>
-    Contact number: <a href="tel:004915237779257">004915237779257 </a> <br>
+    Contact number: <a href="tel:004915237779257">+4915237779257 </a> <br>
     Skype: <a href="skype:JeckaV.">Jecka V.</a> <br>
     E- mail: <a href="mailto:jeckavucko@gmail.com">jeckavucko@gmail.com </a> <br>
-    <a href="mailto:jeckavucko@gmail.com">Contact me.</a>
+    <a href="mailto:jeckavucko@gmail.com">Send me an email - click here!</a>
   </div>
+<br>
+<br>
+<!-- ADD ACTION TAG VALUE IN THE FORM -->
 
-</main>
-
-<!-- ADD ACTION TAG IN THE FORM -->
-<form method="post" action="#" id="contact-form" enctype="multipart/form-data">
-
-  <div class="row">
-      <label class="required" for="name">Your name:</label>
-      <br>
-      <input id="name" class="input" name="name" type="text" value size="30">
+  <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+    <div class="row">
+      <label class="required" for="name">Your name:</label><br>
+      <input id="name" class="input" name="name" type="text" value="" size="30"><br>
       <span id="name_validation" class="error_message"></span>
-  </div>
-
-  <div class="row">
-       <label class="required" for="email">Your e-mail:</label>
-       <input id="email" class="input" name="email" type="text" value size="30" > 
-       <br>
-       <span id="email_validation" class="error_message"></span>
-  </div>
-
-  <div class="row">
-
-      <label class="standard-label" for="contact-telephone"> Telephone: </label>
-      <input type="tel" id="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}"> 
-      <br>
-  </div>
-
-  <div class="row">
-
-      <label class="required" for="your-message-for-me" >Message:</label>
-      <textarea maxlength="240" id="your-message-for-me" required>     </textarea>
+    </div>
+    <div class="row">
+      <label class="required" for="email">Your email:</label><br>
+      <input id="email" class="input" name="email" type="text" value="" size="30"><br>
+      <span id="email_validation" class="error_message"></span>
+    </div>
+    <div class="row">
+      <label class="required" for="message">Your message:</label><br>
+      <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br>
       <span id="message_validation" class="error_message"></span>
-      <br>
-  </div>
-
-      <input class="input" type="submit" value="Send message">
-
-
+    </div>
 </form>
 
+</main>
 
 <footer class="page--footer">
 
