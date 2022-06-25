@@ -326,81 +326,58 @@ text-align: center;
 
 /*START OF WORK PAGE STYING */
 
-.work {
- text-align: center;
-}
-
-
 /* start grid fallback */
-.grid__item {
+main{
+    padding: 0px 20px;
+  }
+  .grid__item {
     display: inline-block;
     width: 33%;
-}
-/* end grid fallback */
+    border-style:hidden;
 
-@supports (display: grid) {
-    
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    margin: 0;
-}
+  }
+  .porfolio__grid__item img{
+  width: 100%;
+  }
 
-.grid__item {
- background-color: lightgray;
- width: auto;
- min-height: auto;
- margin: 0;
-}
-
-.grid__item:last-child {
-    grid-column: 3 / 3;
-    grid-row: 1 / 3;
-}
-}
+  /* end grid fallback */
+  @supports (display: grid) {
+    .work__content--grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+    }
+    .porfolio__grid__item{
+        background-color: #92ddef;
+        padding: 15px;
+        width: auto;
+        min-height: auto;
+        margin: 0;
+    }
+  }
+  
 /*END OF GRID STYLING */
 
 /*END OF WORK PAGE STYLING */
 
 /*OVERWRITING GIVEN VALUES WITH MEDIA - SHOULD BE AT THE END */
 
-@media all and (max-width: 500px) {
-    .grid {
-        grid-template-columns: 1fr; 
-        gap: 10px;
-
-    }
-
-    .grid__item:last-child {
-            grid-column: auto / auto;
-            grid-row: auto / auto;
-    }
-
-    h1 {
-    font-size: 22px;
-    }
-}
-
-@media all and (min-width: 500px) and (max-width: 750px) {
-    .grid {
-        grid-template-columns: 1fr 1fr;
-}
-}
-
-@media all and (max-width:750px) {
-    .grid{
-        gap: 10px;
-    }
-    .grid__item:last-child {
-        grid-column: auto / auto;
-        grid-row: auto / auto;
-    }
-    h1 {
-        font-size: 22px;
-        }
-}
-
-@media all and (max-width: 750px){
-    /* shared code */
+/* media queries */
+@media all and (max-width: 767px) {
+  .work__content--grid {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
   }
+  .porfolio__grid__item:last-child {
+      grid-column: auto / auto;
+      grid-row: auto / auto;
+  }
+  h1 {
+      font-size: 22px;
+  }
+}
+@media all and (max-width: 500px) {
+  .work__content--grid {
+    grid-template-columns: 1fr;
+  }
+}
